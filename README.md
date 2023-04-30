@@ -4,13 +4,13 @@
 
 This project aims to use some computer vision concepts to build a tool for face morphing with a real-time webcam video stream.
 
-![](.\result\facemask_cage.gif)
+![facemask_cage](https://github.com/fabridigua/FaceMask/blob/main/result/facemask_cage.gif?raw=true)
 
-![facemask_obama](.\result\facemask_obama.gif)
+![facemask_obama](https://github.com/fabridigua/FaceMask/blob/main/result/facemask_obama.gif)
 
-![facemask_putin](.\result\facemask_putin.gif)
+![facemask_putin](https://github.com/fabridigua/FaceMask/blob/main/result/facemask_putin.gif)
 
-![facemask_trump](.\result\facemask_trump.gif)
+![facemask_trump](https://github.com/fabridigua/FaceMask/blob/main/result/facemask_trump.gif)
 
 
 
