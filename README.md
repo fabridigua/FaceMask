@@ -4,13 +4,15 @@
 
 This project aims to use some computer vision concepts to build a tool for face morphing with a real-time webcam video stream.
 
-![ezgif.com-video-to-gif (6)](C:\Users\Lenovo\Downloads\ezgif.com-video-to-gif (6).gif)
+![](.\result\facemask_cage.gif)
 
-![ezgif.com-video-to-gif (5)](C:\Users\Lenovo\Downloads\ezgif.com-video-to-gif (5).gif)
+![facemask_obama](.\result\facemask_obama.gif)
 
-![ezgif.com-video-to-gif (4)](C:\Users\Lenovo\Downloads\ezgif.com-video-to-gif (4).gif)
+![facemask_putin](.\result\facemask_putin.gif)
 
-![ezgif.com-video-to-gif (3)](C:\Users\Lenovo\Downloads\ezgif.com-video-to-gif (3).gif)
+![facemask_trump](.\result\facemask_trump.gif)
+
+
 
 ### Requirements
 
