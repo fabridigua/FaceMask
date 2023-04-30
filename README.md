@@ -35,6 +35,6 @@ The application consists into 6 steps:
 5. **Alpha blending** of the warped image
 6. **Homography** calculation and **perspective warping**
 
+---
 
-
-For more details see the related medium article.
+For more details see the related **medium article**.
