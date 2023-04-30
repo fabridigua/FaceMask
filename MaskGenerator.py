@@ -45,10 +45,7 @@ class MaskGenerator:
 
         for t in triangleList:
             # Get triangle as a list of 3 points
-            pt = []
-            pt.append((t[0], t[1]))
-            pt.append((t[2], t[3]))
-            pt.append((t[4], t[5]))
+            pt = [(t[i], t[i+1]) for i in [0,2,4]]
 
             pt1 = (t[0], t[1])
             pt2 = (t[2], t[3])
@@ -60,6 +57,7 @@ class MaskGenerator:
                     for k in range(0, len(points)):
                         if (abs(pt[j][0] - points[k][0]) < 1.0 and abs(pt[j][1] - points[k][1]) < 1.0):
                             ind.append(k)
+
                 if len(ind) == 3:
                     delaunay.append((ind[0], ind[1], ind[2]))
 
@@ -71,10 +69,9 @@ class MaskGenerator:
         warpMat = cv2.getAffineTransform(np.float32(srcTri), np.float32(dstTri))
         dst = cv2.warpAffine(src, warpMat, (size[0], size[1]), None,
                              flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT_101)
-
         return dst
 
-    # Warps and alpha blends triangular regions from img1 and img2 to img
+    # Warps triangular regions from img1 and img2 to img
     def warpTriangle(self, img1, img2, t1, t2):
         # Find bounding rectangle for each triangle
         r1 = cv2.boundingRect(np.float32([t1]))
@@ -148,10 +145,14 @@ class MaskGenerator:
         temp1 = np.multiply(warped_img, (mask1 * (1.0 / 255)))
         temp2 = np.multiply(actual_img, (mask2 * (1.0 / 255)))
 
+        #cv2.imshow('temp1', np.uint8(temp1))
+        #cv2.imshow('temp2', np.uint8(temp2))
+
         output = temp1 + temp2
 
         self.temp1 = temp1
         self.mask1 = mask1
+        self.temp2 = temp2
 
         return np.uint8(output)
 

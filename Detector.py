@@ -14,7 +14,7 @@ class FaceDetector:
     def __init__(self):
         self.mpDraw = mp.solutions.drawing_utils
         self.mpFaceMesh = mp.solutions.face_mesh
-        self.faceMesh = self.mpFaceMesh.FaceMesh(True, 1, True, 0.5, 0.5)
+        self.faceMesh = self.mpFaceMesh.FaceMesh(True, 1, True, 0.2, 0.5)
         self.drawSpec = self.mpDraw.DrawingSpec(thickness=1, circle_radius=1, color=(200, 200, 0))
 
         self.stream_started = False
