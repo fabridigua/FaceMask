@@ -37,4 +37,4 @@ The application consists into 6 steps:
 
 ---
 
-For more details see the related **medium article**.
+For more details see the related ![medium article](https://link.medium.com/1cRL7c0Ktzb).
