@@ -33,8 +33,8 @@ The application consists into 6 steps:
 3. **Delaunay triangulation** calculation
 4. **Warping of triangles** of the two faces
 5. **Alpha blending** of the warped image
-6. **Homography** calculation and **perspective warping**
+6. **Homography* * calculation and **perspective warping**
 
 ---
 
-For more details see the related ![medium article](https://link.medium.com/1cRL7c0Ktzb).
+For more details see the related [medium article](https://link.medium.com/1cRL7c0Ktzb).
